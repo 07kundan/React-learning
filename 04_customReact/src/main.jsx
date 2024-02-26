@@ -26,8 +26,6 @@ function MyApp(){
     // children: "click to open google"
 // }
 
-
-
 // following is the correct syntax
 
 const reactElement= React.createElement(
@@ -44,10 +42,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <MyApp/>
   </React.StrictMode>,
   
+  // reactElement // this is object so don't need paranthesis
 
   //  >>>>>>>>> we must right below things outside <React.StrictMode> as they are not react syntax
 
   // MyApp(),   /*as at the end MyApp is a fn, so we can also called it in this way but it'll be nuisance in optimization*/
-  // reactElement // this is object so don't need paranthesis
 
   )
